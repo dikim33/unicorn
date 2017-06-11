@@ -52,4 +52,7 @@ if [ $? -ne 0 ]; then
     echo
 fi
 
+# Remove the temporary ssh_keys here once the build is done.
+rm -rf ssh_keys
+
 exit 0;

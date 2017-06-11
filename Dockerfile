@@ -21,6 +21,7 @@ ENV KEYSTONEVER 0.9.1
 RUN apt-get update -y 
 RUN apt-get install -y python-dev libglib2.0-dev wget less vim sed cmake time python-pip
 RUN apt-get install -y lib32stdc++-4.8-dev libc6-dev-i386
+RUN apt-get install -y binwalk
 RUN apt-get install -y git unzip
 RUN pip install --upgrade pip
 
