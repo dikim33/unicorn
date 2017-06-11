@@ -6,6 +6,8 @@ FROM ubuntu:16.04
 # >> Run the docker container, mapping a directory into the container
 # docker run --rm -it -v "<HOST_SHARE>:<GUEST_DIR>" retriforce
 
+MAINTAINER DongInn Kim "dikim@indiana.edu"
+
 ## Tunables
 ENV UNICORNVER  1.0.1
 #ENV CAPSTONEVER 3.0.4

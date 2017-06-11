@@ -42,7 +42,7 @@ fi
 
 cp $1 ssh_keys/id_rsa
 
-docker build -t "$image_name" .
+docker build --rm -t "$image_name" .
 
 
 if [ $? -ne 0 ]; then
