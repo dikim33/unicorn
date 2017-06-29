@@ -106,6 +106,8 @@ run apt-get install -y virtualenvwrapper python-pip python2.7-dev build-essentia
 
 run useradd -s /bin/bash -m angr
 
+run git clone git@github.com:angr/angr-doc.git /home/angr/angr-doc
+run chown -R angr /home/angr/angr-doc
 run su - angr -c "pip install virtualenv virtualenvwrapper"
 run su - angr -c "mkdir virt_env; cd virt_env; virtualenv angr; cd angr; source bin/activate; pip install angr"
 run su - angr -c "echo 'source virt_env/angr/bin/activate' >> /home/angr/.bashrc"
