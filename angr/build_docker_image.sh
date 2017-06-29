@@ -18,7 +18,7 @@ fi
 
 echo "Build a docker image with the Dockerfile in the current directory"
 
-image_name="iuctf/radare2"
+image_name="iuctf/angr"
 
 if [ "$#" -ne 1 ]; then
     echo "Illegal number of parameters"
@@ -40,7 +40,7 @@ fi
 docker images | grep $image_name > /dev/null
 if [ $? -eq 0 ]; then
     echo
-    echo "You already have a docker image, 'iuctf/radare2'."
+    echo "You already have a docker image, 'iuctf/angr'."
     echo "This script is aborted now."
     echo
     exit 1;
